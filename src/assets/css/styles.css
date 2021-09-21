@@ -1,0 +1,187 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+input[type="email"],
+input[type="password"],
+input[type="text"],
+button {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    outline: none;
+}
+/*Input error styles*/
+
+/* input[type="email"] {
+    border-bottom: 1px solid red;
+} */
+body {
+    background-color: #f5f5f5;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.form-container {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 50px 40px;
+    width: 350px;
+}
+.form-container,
+.btn button {
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+}
+.form-container,
+.text-input input,
+.btn button {
+    border-radius: 4px;
+}
+.form-container h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.form-container div {
+    margin: 20px 0;
+}
+.form-container p {
+    font-size: 0.8em;
+}
+.form-container p,
+.checkbox-input label {
+    color: #313131;
+}
+.text-input input, .btn button {
+    letter-spacing: 0.05em;
+    width: 100%;
+}
+.text-input input {
+    background-color: #f5f5f5;
+    font-size: 1em;
+    height: 55px;
+    padding: 10px 15px;
+}
+.text-input input::placeholder {
+    color: #313131;
+}
+.checkbox-input {
+    align-items: center;
+    display: flex;
+}
+.checkbox-input input,
+.checkbox-input label{
+    cursor: pointer;
+}
+.checkbox-input {
+    position: relative;
+}
+.btn button {
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    height: 40px;
+    text-transform: uppercase;
+}
+.btn-login button {
+    background-color: #30a1dd;
+    color: #fff;
+}
+.checkbox-input span {
+    border: 2px solid #313131;
+    border-radius: 2px;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 20px;
+    z-index: 0;
+}
+.checkbox-input:hover span {
+    background-color: #e1e1e1;
+}
+.checkbox-input label {
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+input[type="checkbox"] {
+    height: 20px;
+    opacity: 0;
+    width: 20px;
+    z-index: 5;
+}
+input[type="checkbox"]:checked {
+    background-color: red;
+}
+.center-link {
+    text-align: center;
+}
+.center-link p {
+    font-size: 1em;
+}
+.center-link p,
+.center-link a {
+    color: #30a1dd;
+}
+#new-user {
+    /* btn reset + box-shadow */
+    background-color: #fff;
+}
+
+
+.checkbox-input input:checked ~ span {
+    background-color: #30a1dd;
+}
+ 
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox-input span:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  /* Show the checkmark when checked */
+.checkbox-input input:checked ~ span:after {
+    display: block;
+}
+  
+/* Style the checkmark/indicator */
+.checkbox-input span:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.password-input {
+    position: relative;
+}
+
+.password-icon {
+    align-items: center;
+    display: flex;
+    height: 55px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 35px;
+}
+
+.password-icon img {
+    cursor: pointer;
+    height: 50%;
+    width: 100%;
+}
+
+button a {
+    color: #313131;
+    text-decoration: none;
+}

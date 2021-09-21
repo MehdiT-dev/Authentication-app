@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentification</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Sign In</h1>
+        <form action="" method="">
+            <div class="text-input">
+                <input type="email" name="mail" id="email" placeholder="Email" required>
+            </div>
+            <div class="text-input password-input">
+                <input type="password" name="password" placeholder="Password" minlength="8" maxlength="16" autocomplete="off" title="Le mot de passe doit contenir entre 8 et 16 caractères" required>
+                <span class="password-icon">
+                    <img src="assets/icons/eye-show.svg" alt="">
+                </span>
+            </div>
+            <div class="checkbox-input">
+                <input type="checkbox" name="remember" id="rememberMe" value="remember">
+                <label for="rememberMe">Remember me</label>
+                <span></span>
+            </div>
+            <div class="btn btn-login">
+                <button type="submit">Sign up</button>
+            </div>
+        </form>
+        <div class="center-link">
+            <p><a href="pages/forgotten-password.html">Forgot password?</a></p>
+        </div>
+        <div class="btn">
+            <button type="button">
+                <a href="pages/forgotten-password.html">Create an account</a>
+            </button>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

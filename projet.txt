@@ -1,0 +1,17 @@
+Création d'un système d'authentification :
+
+Objectif : 
+    Apprendre la gestion d'utilisateurs
+
+Etapes :
+    - Connexion via email et mot de passe
+    - Express.js pour les pages web
+    - Base de données : MongoDB ou SQLite
+    - Utilisation de bcryptjs pour le chiffrement
+
+Perspectives d'amélioration :
+    Ajouter une discussion instantanée
+        - Envoie de messages / notifications en temps réel via Socket.io
+
+    Intégrer le projet dans une application web via Electron
+        - Logiciel de messagerie type Whatsapp.
